@@ -1,0 +1,148 @@
+#HTML CODE
+*******************************************
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pritha Karmakar</h1>
+      <p>Web Developer | Full Stack Developer</p>
+    </header>
+
+    <section id="about">
+      <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/306495490_825841042109925_6687670477266626519_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=F3082zL46e0AX-2qcg6&_nc_ht=scontent.fccu3-1.fna&oh=00_AfADGYT9WEQPSBF7EBOKXdCP0G_Sf0e6EOT7TuaazS9gJA&oe=64FD4881">;
+    </section>
+
+    <section id="about1">
+      <h2>
+        I'm a passionate web developer and designer with a keen eye for detail.
+        <P> My skills : 
+        HTML,
+        CSS,
+        JavaScript,
+        Responsive Design,
+        Java,
+        python,
+        MongoDb,
+        Express.js
+      </P>
+        
+      </h2>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project"></div>
+        <img src="https://img.freepik.com/free-vector/landing-page-with-cloud-storage_23-2148329447.jpg">
+        <h3>Project 1</h3>
+        <p>Designed and coded a responsive website for a local business.</p>
+                
+      </div>
+      <div class="project">
+        <img src="https://cdn-iekfk.nitrocdn.com/gumXvsPsECZBJwCXwmfaUYwlQKDVzOQw/assets/images/optimized/rev-603eaf4/mylaptopspares.com/wp-content/uploads/2022/06/how-to-identify-genuine-laptop-parts-1.jpg">
+        <h3>Project 2</h3>
+        <p>Developed a JavaScript-based interactive portfolio showcasing my work.
+        </p>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="c:\Users\prith\Downloads\resume.pdf" download> Download Resume (PDF)</a></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: prithakar677@gmail.com</p>
+      <p>Phone: +91 8874356265</p>
+    </section>
+    <footer>
+      <p>&copy; 2023 Pritha Karmakar. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+****************************************************
+
+#CSS CODE
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(39, 90, 122);
+    background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg");
+    padding: 0;
+  }
+  
+  header {
+    background-color: #d66565;
+    background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  #about1 {
+    text-align: center;
+    padding: 1px 0;
+  }
+  #about {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #about img {
+    width: 90px;
+    border-radius: 30%;
+  }
+  
+  #skills {
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  #skills ul {
+    list-style: none;
+  }
+  
+  #projects {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  #resume,
+  #contact {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #resume a {
+    text-decoration: none;
+    color: #0e0d0d;
+    border: 1px solid #0c0c0c;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg"); ;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
