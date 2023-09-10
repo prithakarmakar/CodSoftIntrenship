@@ -1,0 +1,205 @@
+#HTML CODE
+***************************************************
+<!DOCTYPE html>
+<html>.
+<head>
+    <title>Travel Booking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header1>
+        <h1>Welcome to Travel Booking</h1>
+    </header1>
+        
+    <header2>
+        <nav>
+            <div class="logo">Sky Booking</div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">about</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#pages">pages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header2>
+    <section class="search-form">
+        <h3>Search for Your Travel</h3>
+        <form action="search_results.html" method="GET">
+            
+            <label for="from">from</label>
+            <input type="text" id="from" name="from" required><br>
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required><br>
+
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br>
+
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" name="check-out" required><br>
+
+            <label for="cabin class">economy/cabin</label>
+            <input type="text" id="cabin class" name="cabin class" required><br>
+
+            <label for="departure">departure:</label>
+            <input type="departure" id="departure" name="departure" required><br>
+
+            
+            <label for=" adults(+16) ">adults(+16):</label>
+            <input type="number" id="number" name="number" min="1" required><br>
+
+            <label for="num-guests">Number of Guests:</label>
+            <input type="number" id="num-guests" name="num-guests" min="1" required><br>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Travel Booking System</p>
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+********************************************************
+
+#CSS CODE
+********************************************************
+/* Reset some default styles */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url("https://images4.alphacoders.com/124/124998.jpg");
+    color: #333;
+}
+
+.header1 {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header2 {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.search-form {
+    background-color: #9485a6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #258cd1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .search-form {
+        max-width: 90%;
+    }
+}
+
+*************************************************************
+
+#JAVASCRIPT
+***************************************************************
+const express = require("express");
+const app = express();
+const port = 3000;
+
+// Sample flight data (replace this with your actual database)
+const flights = [
+    { origin: "New York", destination: "Los Angeles", price: 300 },
+    { origin: "Chicago", destination: "Miami", price: 250 },
+    { origin: "San Francisco", destination: "Las Vegas", price: 200 },
+];
+
+app.use(express.static("public"));
+
+app.get("/flights", (req, res) => {
+    const origin = req.query.origin;
+    const destination = req.query.destination;
+
+    // Filter flights based on origin and destination
+    const filteredFlights = flights.filter(flight => flight.origin === origin && flight.destination === destination);
+
+    res.json(filteredFlights);
+});
+
+app.listen(port, () => {
+    console.log("Server listening at http://localhost:${port}");
+});
