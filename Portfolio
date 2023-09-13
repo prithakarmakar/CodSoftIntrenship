@@ -4,127 +4,223 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>My Portfolio</title>
-  </head>
-  <body>
+    <style>
+
+    </style>
+</head>
+<body>
     <header>
-      <h1>Pritha Karmakar</h1>
-      <p>Web Developer | Full Stack Developer</p>
-    </header>
+        <nav>
+            <div class="left"> My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Achievements</a></li>
+                    <li><a href="/">Open Source</a></li>
+                    <li><a href="/">blogs</a></li>
+                    <li><a href="/">Contact Me</a></li>
 
-    <section id="about">
-      <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/306495490_825841042109925_6687670477266626519_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=F3082zL46e0AX-2qcg6&_nc_ht=scontent.fccu3-1.fna&oh=00_AfADGYT9WEQPSBF7EBOKXdCP0G_Sf0e6EOT7TuaazS9gJA&oe=64FD4881">;
-    </section>
-
-    <section id="about1">
-      <h2>
-        I'm a passionate web developer and designer with a keen eye for detail.
-        <P> My skills : 
-        HTML,
-        CSS,
-        JavaScript,
-        Responsive Design,
-        Java,
-        python,
-        MongoDb,
-        Express.js
-      </P>
-        
-      </h2>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project"></div>
-        <img src="https://img.freepik.com/free-vector/landing-page-with-cloud-storage_23-2148329447.jpg">
-        <h3>Project 1</h3>
-        <p>Designed and coded a responsive website for a local business.</p>
+                </ul>
+            </div>
                 
-      </div>
-      <div class="project">
-        <img src="https://cdn-iekfk.nitrocdn.com/gumXvsPsECZBJwCXwmfaUYwlQKDVzOQw/assets/images/optimized/rev-603eaf4/mylaptopspares.com/wp-content/uploads/2022/06/how-to-identify-genuine-laptop-parts-1.jpg">
-        <h3>Project 2</h3>
-        <p>Developed a JavaScript-based interactive portfolio showcasing my work.
-        </p>
-      </div>
-    </section>
+        </nav>
+    </header>
+    <header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/female-developer-6992631-5699680.png" alt="">
+                </div>
+                <div class="rightSection">
+                                                    Hi, My name is <span class="purple">Pritha</span>
+                                                    <div>and I am a passionate</div>
+                                                    <div>web developer</div>
+                                                    <span id="element"></span>
+                </div>
+            </section>
+            <hr>
+            <section class="secondsection">
+                <span class="test gray"> What I have done so far</span>
+                <h1>Work Experiance</h1>
+                <div class="box">
+                    <div class="rightSection">
+                        <img class="image-left" src="https://media.istockphoto.com/id/1283040244/vector/programming-and-engineering-development-tiny-girl-programmer-or-developer-create-code.jpg?s=170667a&w=0&k=20&c=dFYcUWVhYZCOw9upDgLnoSD78igQlUmbUlJ2pt_zHb0=">
+                    </div>
+                    <hr>
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <p> 
+                    <div class="center">
+                        <p>A passionate full stack developer havig an experiance of building web application with html</p>
+                        <p> some other cool libraries and frameworks. </p> </p>
+                        <p>Lorem ipsum dolor, sit amet consecteture adipisicing elit.</p>
+                        <p>libero unde omnis ullam, enim facillis possimus accusmus ab!</p>
+                        <p>dolores mollitia odio quos. facilis, incidunt?</p>
+                    </div>
+                    </hr>
+                    <hr>
+                    <div class="center"></div>
+                    </p><div class="vertical-title">
+                        CSS Developer
+                        <p>
+                        <div class="center">
+                            <p>Lorem ipsum dolor, sit amet consecteture adipisicing elit.</p>
+                            <p>libero unde omnis ullam, enim facillis possimus accusmus ab!</p>
+                            <p>dolores mollitia odio quos. facilis, incidunt??</p>
+                    </div>
+                    </hr>
+                    </p>
+                </hr>
+                <hr>
+                <div class="center"></div>
+                </p><div class="vertical-title">
+                    Node.js Developer
+                    <p>
+                    <div class="center">
+                        <p>A passionate full stack developer havig an experiance of building web application</p>
+                        <p>with JavaScript/ Reactjs/nodejs/React Nation and
+                        <p> some other cool libraries and frameworks. </p>         
+                     </p>
+                </div>
+            </hr>
+            <hr>
+            <div class="center"></div>
+            </p><div class="vertical-title">
+                software Engineering
+                <p>
+                <div class="center">
+                    <p>Designed and coded a responsive website for a local business.</p>
+                    <p>Developed a JavaScript-based interactive portfolio showcasing my work.</p>
+                    <p>My skills : HTML,CSS,JavaScript,Responsive Design,Java,python,MongoDb,Express.js</p>
+            </div>
+            </hr>
+            </p>
+
+                </div>
+            </hr>
+
+            </section>
+        </main>
+    </header>
+    <hr>
     <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="c:\Users\prith\Downloads\resume.pdf" download> Download Resume (PDF)</a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: prithakar677@gmail.com</p>
-      <p>Phone: +91 8874356265</p>
-    </section>
+        <h2>See My Resume</h2>
+        <p><a href="c:\Users\prith\Downloads\resume.pdf" download> Download Resume (PDF)</a></p>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: prithakar677@gmail.com</p>
+        <p>Phone: +91 8874356265</p>
+      </section>
+    </hr>
+    <hr>
     <footer>
-      <p>&copy; 2023 Pritha Karmakar. All rights reserved.</p>
+        <div class="footer">
+            <div class="footer-first">
+                <p>&copy; 2023 Pritha Karmakar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-  </body>
+    </hr>
+</body>
 </html>
-****************************************************
+******************************************************
 
 #CSS CODE
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
-    background-color: rgb(39, 90, 122);
-    background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg");
     padding: 0;
-  }
-  
-  header {
-    background-color: #d66565;
-    background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg");
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  #about1 {
-    text-align: center;
-    padding: 1px 0;
-  }
-  #about {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  #about img {
-    width: 90px;
-    border-radius: 30%;
-  }
-  
-  #skills {
-    text-align: left;
-    padding: 10px 0;
-  }
-  
-  #skills ul {
+}
+body{
+    background-color: rgba(244, 240, 240, 0.847);
+    color: black;
+    font-family: 'poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(177, 177, 236);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
     list-style: none;
-  }
-  
-  #projects {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  .project img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  #resume,
+    margin: 0 23px;
+}
+nav ul li:hover{
+    list-style: none;
+    margin: 0 23px;
+}
+main hr{
+    border: 0;
+    background: violet;
+    height: 1.2px;
+    margin: 10px 0;
+}
+.left{
+    font-size: 3rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    margin: 23px 0;
+}
+.firstSection{
+    width: 50%;
+}
+.leftSection{
+    background-color: none;
+    width: 300px;
+}
+.rightSection{
+    background-color: none;
+    font-size: 2rem;
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: blueviolet;
+}
+.secondsection h1{
+    font-size: 2rem;
+}
+.secondsection box{
+    background: rgba(244, 240, 240, 0.847);
+    width: 80vw;
+    height: 2px;
+    margin: 5px 0;
+    margin: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+.image-left{
+    width: 400px;
+}
+.vertical title{
+    font-size: 1.9rem;
+
+}
+#resume,
   #contact {
     text-align: center;
     padding: 20px 0;
@@ -133,16 +229,20 @@ body {
   #resume a {
     text-decoration: none;
     color: #0e0d0d;
-    border: 1px solid #0c0c0c;
+    border: 1px solid #0d1176;
     padding: 10px 20px;
     border-radius: 5px;
   }
-  
-  footer {
+footer{
+    display: flex;
+    margin: 20px 122px;
     background-color: #333;
+    font-size: 2rem;
     background-image: url("https://wallpapers.com/images/hd/nature-blur-background-x6nsya3onqq6pbwh.jpg"); ;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-  }
-  
+}
+
+
+
